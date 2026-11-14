@@ -25,7 +25,11 @@ blockquote cite{display:block;margin-top:8px;font-family:"Nunito",sans-serif;fon
 .nota{font-size:.9rem;color:var(--suave)}
 .sutil{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;margin:14px 0 4px;padding:12px 16px;background:#fff6e3;
 border:1px solid #ecd9a6;border-radius:14px;font-size:1rem;color:var(--tinta)}
-.sutil a{color:var(--rosa);font-weight:800;text-decoration:none;white-space:nowrap}
+.sutil a{color:var(--rosa);font-weight:800;text-decoration:none;white-space:nowrap;display:inline-block;
+animation:cores 3s linear infinite,pulo 1.5s ease-in-out infinite}
+@keyframes cores{0%,100%{color:#d6336c}33%{color:#a86f00}66%{color:#4f8a3a}}
+@keyframes pulo{0%,60%,100%{transform:translateY(0) scale(1)}30%{transform:translateY(-4px) scale(1.06)}}
+@media (prefers-reduced-motion:reduce){.sutil a{animation:none}}
 .sutil a:hover{text-decoration:underline}
 .livro{display:flex;gap:18px;align-items:center}
 .livro img{width:120px;border-radius:6px;box-shadow:var(--sombra);flex:none}
