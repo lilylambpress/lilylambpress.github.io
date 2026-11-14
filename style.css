@@ -23,6 +23,9 @@ blockquote cite{display:block;margin-top:8px;font-family:"Nunito",sans-serif;fon
 .b.s{background:var(--salvia);box-shadow:0 4px 12px rgba(111,154,91,.3)}
 .b:hover{filter:brightness(1.07)}
 .nota{font-size:.9rem;color:var(--suave)}
+.sutil{font-size:.88rem;color:var(--suave);margin-top:-4px}
+.sutil a{color:var(--salvia);font-weight:700;text-decoration:none}
+.sutil a:hover{text-decoration:underline}
 .livro{display:flex;gap:18px;align-items:center}
 .livro img{width:120px;border-radius:6px;box-shadow:var(--sombra);flex:none}
 .pagina{background:#f6eef0;border-radius:18px;padding:22px}
