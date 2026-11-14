@@ -1,0 +1,14 @@
+name: feed
+on:
+  schedule: [{cron: "0 12 * * *"}]
+  workflow_dispatch:
+permissions: {contents: write}
+jobs:
+  feed:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python feed.py "Lily & Lamb Press: Free Bible Verse Coloring Pages"
+      - run: |
+          git config user.name feed-bot && git config user.email feed-bot@users.noreply.github.com
+          git add feed.xml && git diff --cached --quiet || (git commit -m "feed: pins do dia" && git push)
