@@ -41,13 +41,15 @@ animation:cores 3s linear infinite,pulo 1.5s ease-in-out infinite}
 .grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
 .mini{display:block;background:var(--papel);border-radius:16px;box-shadow:var(--sombra);overflow:hidden;text-decoration:none;color:var(--tinta);transition:transform .15s}
 .mini:hover{transform:translateY(-3px)}
-.mini img{width:100%;height:auto;display:block;aspect-ratio:400/518;object-fit:cover;border-bottom:1px solid #f3e7eb}
+.mini img{width:100%;height:auto;display:block;border-bottom:1px solid #f3e7eb}
+.livro-titulo{font-family:"Cormorant Garamond",Georgia,serif;font-size:2rem;text-align:center;margin:44px 0 0}
+.tema h3{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.45rem;display:flex;align-items:center;gap:10px;margin:.2em 0 .5em}
 .mini b{display:block;padding:8px 10px 2px;font-size:.92rem}
 .mini i{display:block;padding:0 10px 10px;font-family:"Cormorant Garamond",Georgia,serif;font-size:1rem;color:var(--suave)}
 .heroi{text-align:center}
 .heroi blockquote{text-align:left}
 .tema{margin-top:30px}
 .tema h2{display:flex;align-items:center;gap:10px}
-.tema h2 .bola{width:14px;height:14px;border-radius:50%}
+.tema .bola{width:14px;height:14px;border-radius:50%;flex:none}
 footer{text-align:center;color:var(--suave);font-size:.88rem;padding:10px 16px 30px}
 @media (max-width:520px){blockquote{font-size:1.35rem}h1{font-size:1.6rem}.livro{flex-direction:column;text-align:center}}
